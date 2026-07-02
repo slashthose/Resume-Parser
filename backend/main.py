@@ -20,16 +20,9 @@ UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 # 1. ADD THIS: Serves your index.html directly from the backend
-@app.get("/", response_class=HTMLResponse)
+@app.get("/")
 async def read_root():
-    # Make sure index.html is in your project root or adjust path below
-    # e.g., "frontend/index.html" if it's inside a folder named frontend
-    html_path = "index.html"
-    if os.path.exists("frontend/index.html"):
-        html_path = "frontend/index.html"
-
-    with open(html_path, "r", encoding="utf-8") as f:
-        return f.read()
+    return {"status": "Backend is running smoothly!", "endpoint": "/screen"}
 
 @app.post("/screen")
 async def screen_resumes(
