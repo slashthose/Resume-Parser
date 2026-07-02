@@ -766,7 +766,7 @@
 
         try {
           console.log("Sending network request to backend...");
-          const response = await fetch("/screen", {
+          const response = await fetch("https://resumescreener-1vbp.onrender.com/screen", {
             method: "POST",
             body: formData,
           });
