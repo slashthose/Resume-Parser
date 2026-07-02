@@ -3,7 +3,7 @@ import json
 import os
 
 # Grab the API key from environment variables (configured in Render/Railway)
-GROQ_API_KEY = os.getenv("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")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL = "llama3-8b-8192"  # Fast, highly accurate open-source Llama 3 model
 
