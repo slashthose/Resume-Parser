@@ -6,6 +6,6 @@ python-docx
 httpx
 sqlalchemy
 psycopg2-binary
-passlib[bcrypt]
+bycrypt
 python-jose[cryptography]
 email-validator
