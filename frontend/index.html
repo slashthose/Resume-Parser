@@ -903,6 +903,8 @@
     <script>
       const BACKEND_URL = "https://resume-parser-onfy.onrender.com";
 
+      let historyLoaded = false;
+
       let authMode = "login"; // or "signup"
 
       function toggleAuthMode() {
@@ -1024,7 +1026,7 @@
       }
 
       // -------- History panel --------
-      let historyLoaded = false;
+     
 
       async function toggleHistory() {
         const panel = document.getElementById("historyPanel");
